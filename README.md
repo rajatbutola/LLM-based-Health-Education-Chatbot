@@ -6,11 +6,11 @@ To ensure accuracy and trustworthiness, the chatbot uses a Retrieval-Augmented G
 
 When a patient asks a question, the system flow is:
 
--  **Query preprocessing – the question is cleaned and converted into an embedding.
--  **Document retrieval – FAISS searches for the most relevant leaflet chunks.
--  **Prompt construction – the retrieved passages are combined with a strict bilingual answer template.
--  **LLM generation – TinyLlama uses this context to produce a grounded response, constrained to the evidence it was given.
--  **Bilingual output – the final answer is presented in English and Traditional Chinese, with source citations.
+-  Query preprocessing – the question is cleaned and converted into an embedding.
+-  Document retrieval – FAISS searches for the most relevant leaflet chunks.
+-  Prompt construction – the retrieved passages are combined with a strict bilingual answer template.
+-  LLM generation – TinyLlama uses this context to produce a grounded response, constrained to the evidence it was given.
+-  Bilingual output – the final answer is presented in English and Traditional Chinese, with source citations.
 
 By combining lightweight LLM inference with retrieval from vetted medical texts, the chatbot balances interpretability, privacy (runs fully on-premise), and accessibility, making it a practical tool for patient education in clinical settings such as hospitals or waiting rooms.
 
