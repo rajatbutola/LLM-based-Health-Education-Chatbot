@@ -97,9 +97,9 @@ You can now ask questions like:
 
 Notes on Use
 
--  **This chatbot is for educational purposes only.
--  **It is not a diagnostic tool and should not replace medical advice.
--  **Always consult healthcare professionals for personal medical concerns.
+-  This chatbot is for educational purposes only.
+-  It is not a diagnostic tool and should not replace medical advice.
+-  Always consult healthcare professionals for personal medical concerns.
 
 Please cite the original CDC / NHS / MOHW-HPA sources when redistributing patient education content.
 
