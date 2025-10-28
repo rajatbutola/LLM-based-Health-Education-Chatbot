@@ -58,34 +58,33 @@ pip install -r requirements.txt
 ```
 ### 4. Data Preparation
 
-Download patient education PDFs (CDC, NHS, Taiwan HPA).
+## 1. Download patient education PDFs (CDC, NHS, Taiwan HPA).
 
-Place them into:
+## 2. Place them into:
 ```bash
 data/leaflets/
 ```
-3. Build the FAISS index:
-4. ```bash
+## 3. Build the FAISS index:
+```bash
 python ingest.py
 ```
-Run the Chatbot
+### 5. Run the Chatbot
 
 Start the Flask server:
 ```bash
 python app_chat.py
 ```
-Open http://127.0.0.1:5000
- in your browser.
+Open http://127.0.0.1:5000 in your browser.
 You can now ask questions like:
 
-“What is PrEP and how effective is it?”
+-  **“What is PrEP and how effective is it?”
 
 
 Notes on Use
 
-This chatbot is for educational purposes only.
-It is not a diagnostic tool and should not replace medical advice.
-Always consult healthcare professionals for personal medical concerns.
+-  **This chatbot is for educational purposes only.
+-  **It is not a diagnostic tool and should not replace medical advice.
+-  **Always consult healthcare professionals for personal medical concerns.
 
 Please cite the original CDC / NHS / MOHW-HPA sources when redistributing patient education content.
 
