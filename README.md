@@ -1,7 +1,18 @@
 #  Health Education Chatbot
 
-A **local, CPU-friendly chatbot** that helps patients understand clinical terms in **plain English** and **Traditional Chinese (Taiwan)**.  
-It uses **retrieval-augmented generation (RAG)** with hospital-approved patient education materials (e.g., CDC, MOHW/HPA leaflets) to give **accurate, grounded, and bilingual answers**.
+A local, CPU-friendly chatbot designed to support patient education by translating complex medical terminology into plain English and Traditional Chinese (Taiwan). The system is powered by a lightweight open-source large language model (TinyLlama-1.1B-Chat), which is optimized to run efficiently on CPU without the need for GPUs or paid API services.
+
+To ensure accuracy and trustworthiness, the chatbot uses a Retrieval-Augmented Generation (RAG) pipeline. Instead of relying on the model’s general training data alone, it retrieves relevant passages from a curated collection of hospital-approved patient education materials (e.g., CDC brochures, Taiwan Ministry of Health and Welfare / HPA leaflets) that have been pre-indexed using FAISS (a vector similarity search library). Embeddings for document chunks are generated with the multilingual E5-small sentence transformer, which allows robust semantic search across both English and Chinese text.
+
+When a patient asks a question, the system flow is:
+
+-  **Query preprocessing – the question is cleaned and converted into an embedding.
+-  **Document retrieval – FAISS searches for the most relevant leaflet chunks.
+-  **Prompt construction – the retrieved passages are combined with a strict bilingual answer template.
+-  **LLM generation – TinyLlama uses this context to produce a grounded response, constrained to the evidence it was given.
+-  **Bilingual output – the final answer is presented in English and Traditional Chinese, with source citations.
+
+By combining lightweight LLM inference with retrieval from vetted medical texts, the chatbot balances interpretability, privacy (runs fully on-premise), and accessibility, making it a practical tool for patient education in clinical settings such as hospitals or waiting rooms.
 
 ---
 
