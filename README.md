@@ -1,4 +1,4 @@
-#  Bilingual Health Education Chatbot
+#  Health Education Chatbot
 
 A **local, CPU-friendly chatbot** that helps patients understand clinical terms in **plain English** and **Traditional Chinese (Taiwan)**.  
 It uses **retrieval-augmented generation (RAG)** with hospital-approved patient education materials (e.g., CDC, MOHW/HPA leaflets) to give **accurate, grounded, and bilingual answers**.
