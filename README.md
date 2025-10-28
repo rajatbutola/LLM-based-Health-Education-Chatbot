@@ -1,16 +1,16 @@
-# 🏥 Bilingual Health Education Chatbot
+#  Bilingual Health Education Chatbot
 
 A **local, CPU-friendly chatbot** that helps patients understand clinical terms in **plain English** and **Traditional Chinese (Taiwan)**.  
 It uses **retrieval-augmented generation (RAG)** with hospital-approved patient education materials (e.g., CDC, MOHW/HPA leaflets) to give **accurate, grounded, and bilingual answers**.
 
 ---
 
-## ✨ Features
-- 🔍 **Retrieval-Augmented Generation (RAG)** – answers are based only on vetted patient education PDFs.  
-- 🌐 **Bilingual output** – English and Traditional Chinese explanations in one response.  
-- ✅ **Grounded answers** – always cites hospital-approved sources at the end.  
-- 💻 **Runs locally** – no paid APIs or cloud services required. Works on CPU.  
-- 🧾 **Human-friendly format** – answers look like:
+##  Features
+-  **Retrieval-Augmented Generation (RAG)** – answers are based only on vetted patient education PDFs.  
+-  **Bilingual output** – English and Traditional Chinese explanations in one response.  
+-  **Grounded answers** – always cites hospital-approved sources at the end.  
+-  **Runs locally** – no paid APIs or cloud services required. Works on CPU.  
+-  **Human-friendly format** – answers look like:
 
 Answer:
 English: "PrEP is highly effective ..."
@@ -19,7 +19,7 @@ Sources:
 1: cdc-prep-leaflet.pdf (chunk 0)
 2: cdc-prep-guide.pdf (chunk 1)
 
-
+```bash
 ---
 
 ## Project Structure
@@ -36,7 +36,7 @@ Sources:
 └── data/
 └── leaflets/ # Place hospital-approved patient PDFs here
 
-
+```
 ---
 
 ## Installation
@@ -45,30 +45,35 @@ Sources:
 ```bash
 git clone https://github.com/your-username/health-education-chatbot.git
 cd health-education-chatbot
-
+```
 2. Create virtual environment
+```bash
 python -m venv llmenv-chat
 source llmenv-chat/bin/activate   # Linux/Mac
 .\llmenv-chat\Scripts\activate    # Windows
-
-3. Install dependencies
+```
+4. Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 Data Preparation
 
 Download patient education PDFs (CDC, NHS, Taiwan HPA).
 
 Place them into:
+```bash
 data/leaflets/
-
+```
 3. Build the FAISS index:
+4. ```bash
 python ingest.py
-
+```
 Run the Chatbot
 
 Start the Flask server:
+```bash
 python app_chat.py
-
+```
 Open http://127.0.0.1:5000
  in your browser.
 You can now ask questions like:
