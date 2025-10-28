@@ -79,6 +79,12 @@ You can now ask questions like:
 
 -  **“What is PrEP and how effective is it?”
 
+<img width="943" height="783" alt="Health education chatbot 0" src="https://github.com/user-attachments/assets/345a03fe-7bac-4ae7-87a7-14bb4f7f764e" />
+<img width="1058" height="840" alt="Health education chatbot 1" src="https://github.com/user-attachments/assets/cb6ff618-6ec3-4af6-9f42-ab2f66000338" />
+<img width="1051" height="855" alt="Health education chatbot 2" src="https://github.com/user-attachments/assets/d63d6390-8e15-4051-a6fb-43b051247deb" />
+<img width="969" height="829" alt="Health education chatbot 3" src="https://github.com/user-attachments/assets/c3853625-b6bd-45c3-8378-c0b84e77cdfd" />
+<img width="960" height="821" alt="Health education chatbot 4" src="https://github.com/user-attachments/assets/6d4b063f-d7e9-4041-b91b-7abff9e347c6" />
+
 
 Notes on Use
 
