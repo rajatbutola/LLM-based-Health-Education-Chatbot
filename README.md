@@ -46,17 +46,17 @@ Sources:
 git clone https://github.com/your-username/health-education-chatbot.git
 cd health-education-chatbot
 ```
-2. Create virtual environment
+### 2. Create virtual environment
 ```bash
 python -m venv llmenv-chat
 source llmenv-chat/bin/activate   # Linux/Mac
 .\llmenv-chat\Scripts\activate    # Windows
 ```
-4. Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-Data Preparation
+### 4. Data Preparation
 
 Download patient education PDFs (CDC, NHS, Taiwan HPA).
 
