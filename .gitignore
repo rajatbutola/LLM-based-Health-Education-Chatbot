@@ -1,0 +1,12 @@
+# Ignore Python bytecode files
+__pycache__/
+# Ignore virtual environment (if it's named "llmenv-chat")
+llmenv-chat/
+# Ignore logs and other temporary files
+*.log
+# Ignore environment variable files
+.env
+# Ignore certain directories (you can modify based on your project needs)
+static/
+store/
+templates/
